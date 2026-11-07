@@ -1,0 +1,232 @@
+id,source,event,date_first,date_last,date,landslides,latitude,longitude,region,season,ar_centre_cell,ar_3x3_cells,tc_distance_km,tc_name,storm
+R001,Emilia-Romagna 2023,Emilia-Romagna_May16,2023-05-15,2023-05-17,2023-05-16,49103,44.15,11.77,Europe and Türkiye,warm,False,True,7721.0,,other
+R002,Emberson et al. 2022,Dominica_Maria,2017-09-17,2017-09-19,2017-09-18,10551,15.41,-61.36,Central America and Caribbean,warm,False,False,79.0,Maria,TC
+R003,Emberson et al. 2022,Taiwan_Morakot,2009-08-05,2009-08-11,2009-08-09,10236,22.99,120.82,Asia,warm,False,False,126.0,Morakot,TC
+R004,Emberson et al. 2022,Brazil_Teresopolis,2011-01-11,2011-01-14,2011-01-11,7268,-22.26,-42.67,South America,warm,True,True,14269.0,,AR
+R005,COOLR event inventory,"Automated inventory of landslides in Myanmar, 2015-07-30",2015-07-30,2015-07-30,2015-07-30,6823,23.35,93.84,Asia,warm,False,False,266.0,,TC
+R006,Emberson et al. 2022,Japan_Hiroshima,2018-06-28,2018-07-08,2018-07-05,6418,34.35,132.67,Asia,warm,True,True,221.0,Prapiroon+Baiu,TC
+R007,Eastern Black Sea (Çömert et al. 2025),Dogankent_2020,2020-08-22,2020-08-22,2020-08-22,5957,40.78,38.8,Europe and Türkiye,warm,True,True,6841.0,,AR
+R008,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2017-10-10",2017-10-10,2017-10-10,2017-10-10,3944,21.26,104.59,Asia,cold,False,False,12932.0,,other
+R009,COOLR event inventory,"Manual inventory of landslides in Brazil, 2024-04-29",2024-04-29,2024-04-29,2024-04-29,3934,-29.12,-51.92,South America,cold,True,True,,,AR
+R010,COOLR event inventory,"Automated inventory of landslides in Mexico, 2022-05-30",2022-05-30,2022-05-30,2022-05-30,3862,15.94,-96.38,Central America and Caribbean,warm,False,False,36.0,Hurricane Agatha,TC
+R011,COOLR event inventory,"Manual inventory of landslides in the Philippines, 2023-07-26",2023-07-26,2023-07-26,2023-07-26,3183,17.92,121.04,Asia,warm,False,False,116.0,Typhoon Egay,TC
+R012,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2017-08-02",2017-08-02,2017-08-02,2017-08-02,2014,21.79,104.08,Asia,warm,False,False,1579.0,,other
+R013,COOLR event inventory,"Manual inventory of landslides in Vietnam, 2023-08-05",2023-08-05,2023-08-05,2023-08-05,1950,21.84,103.93,Asia,warm,False,False,2122.0,,other
+R014,Emberson et al. 2022,Japan_Kii_Talas,2011-09-01,2011-09-05,2011-09-03,1901,33.94,135.83,Asia,warm,True,True,179.0,Talas,TC
+R015,COOLR event inventory,"Manual inventory of landslides in Bangladesh, 2023-08-06",2023-08-06,2023-08-06,2023-08-06,1811,21.99,92.25,Asia,warm,True,True,3302.0,,AR
+R016,COOLR event inventory,"Manual inventory of landslides in Malawi, 2023-03-13",2023-03-13,2023-03-13,2023-03-13,1701,-15.97,35.71,Africa,warm,False,False,130.0,Cyclone Freddy,TC
+R017,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2018-08-27",2018-08-27,2018-08-27,2018-08-27,1646,20.53,104.62,Asia,warm,False,False,3746.0,,other
+R018,Emberson et al. 2022,Dominica_Erika,2015-08-25,2015-08-28,2015-08-27,1548,15.37,-61.35,Central America and Caribbean,warm,False,False,113.0,Erika,TC
+R019,Canadian Landslide Database,BC_2021-11-15,2021-11-15,2021-11-15,2021-11-15,1402,49.63,-121.38,"North America, Pacific side",cold,True,True,,,AR
+R020,Eastern Black Sea (Çömert et al. 2025),Hopa_2015,2015-08-22,2015-08-25,2015-08-24,1367,41.38,41.41,Europe and Türkiye,warm,False,False,7598.0,,other
+R021,Emberson et al. 2022,Zimbabwe_Idai,2019-03-14,2019-03-19,2019-03-15,1319,-19.87,32.82,Africa,warm,False,False,75.0,Idai,TC
+R022,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2018-06-23",2018-06-23,2018-06-23,2018-06-23,1310,22.35,103.34,Asia,warm,True,True,,,AR
+R023,COOLR event inventory,"Automated inventory of landslides in Laos, 2018-08-30",2018-08-30,2018-08-30,2018-08-30,1178,19.71,102.36,Asia,warm,True,True,4462.0,,AR
+R024,Eastern Black Sea (Çömert et al. 2025),Kaptanpasa_2017,2017-09-27,2017-09-29,2017-09-27,1142,40.96,40.79,Europe and Türkiye,warm,False,False,7821.0,,other
+R025,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2020-10-18",2020-10-18,2020-10-18,2020-10-18,1138,16.79,106.64,Asia,cold,False,False,,,other
+R026,United States (LIUS),,2006-07-30,2006-07-30,2006-07-30,1035,32.2,-110.2,"North America, Pacific side",warm,True,True,,,AR
+R027,United States (LIUS),,1997-01-01,1997-01-01,1997-01-01,998,44.5,-116.5,"North America, Pacific side",cold,True,True,10975.0,,AR
+R028,COOLR event inventory,"Automated inventory of landslides in Myanmar, 2018-07-28",2018-07-28,2018-07-28,2018-07-28,992,16.9,98.18,Asia,warm,False,False,4107.0,,other
+R029,COOLR event inventory,"Manual inventory of landslides in South Africa, 2022-04-12",2022-04-12,2022-04-12,2022-04-12,870,-29.73,30.89,Africa,cold,True,True,117.0,Unknown,TC
+R030,Eastern Black Sea (Çömert et al. 2025),Besikduzu_2016,2016-09-21,2016-09-21,2016-09-21,719,41.02,39.2,Europe and Türkiye,warm,True,True,7148.0,,AR
+R031,United States (LIUS),,2014-09-08,2014-09-08,2014-09-08,692,37.0,-114.0,"North America, Pacific side",warm,False,False,1213.0,,other
+R032,Eastern Black Sea (Çömert et al. 2025),Persembe_2016,2016-07-02,2016-07-06,2016-07-05,633,41.05,37.72,Europe and Türkiye,warm,False,False,8950.0,,other
+R033,Emberson et al. 2022,Brazil_Blumenau,2008-11-20,2008-11-25,2008-11-21,597,-26.84,-49.0,South America,warm,False,False,13270.0,,other
+R034,United States (LIUS),,1999-07-28,1999-07-28,1999-07-28,478,40.0,-106.0,"North America, Pacific side",warm,False,False,2897.0,,other
+R035,Emberson et al. 2022,Philippines_Itogon,2018-09-14,2018-09-16,2018-09-15,458,16.34,120.69,Asia,warm,False,False,196.0,Mangkhut,TC
+R036,Emberson et al. 2022,Taiwan_Kalmaegi,2008-07-16,2008-07-19,2008-07-17,429,23.34,120.77,Asia,warm,False,False,151.0,Kalmaegi,TC
+R037,United States (LIUS),,1996-11-18,1996-11-18,1996-11-18,425,44.5,-123.5,"North America, Pacific side",cold,True,True,,,AR
+R038,COOLR event inventory,Pokot Landslide Inventory,2019-11-23,2019-11-23,2019-11-23,422,1.35,35.41,Africa,cold,False,False,9066.0,,other
+R039,COOLR event inventory,"Manual inventory of landslides in China, 2023-07-28",2023-07-28,2023-07-28,2023-07-28,361,24.84,118.34,Asia,warm,True,True,27.0,Typhoon Doksuri,TC
+R040,COOLR event inventory,"Manual inventory of landslides in Brazil, 2023-02-19",2023-02-19,2023-02-19,2023-02-19,330,-23.77,-45.66,South America,warm,True,True,10863.0,,AR
+R041,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2018-08-03",2018-08-03,2018-08-03,2018-08-03,302,22.67,103.41,Asia,warm,False,False,2110.0,,other
+R042,Eastern Black Sea (Çömert et al. 2025),Of_2020,2020-08-14,2020-08-14,2020-08-14,295,40.9,40.31,Europe and Türkiye,warm,False,False,6976.0,,other
+R043,Emberson et al. 2022,Micronesia2002,2002-07-01,2002-07-03,2002-07-01,273,7.37,151.84,Asia,warm,False,False,217.0,Chataan,TC
+R044,Canadian Landslide Database,BC_2021-08-16,2021-08-16,2021-08-16,2021-08-16,263,50.27,-121.26,"North America, Pacific side",warm,True,True,3459.0,,AR
+R045,United States (LIUS),,2018-05-17,2018-05-19,2018-05-17,259,36.12,-81.25,"North America, east and interior",warm,True,True,12269.0,,AR
+R046,COOLR event inventory,"Automated inventory of landslides in Laos, 2015-09-11",2015-09-11,2015-09-11,2015-09-11,242,18.48,103.33,Asia,warm,False,False,3763.0,,other
+R047,COOLR event inventory,"Automated inventory of landslides in Thailand, 2011-03-30",2011-03-30,2011-03-30,2011-03-30,225,8.29,98.92,Asia,cold,False,False,9661.0,,other
+R048,COOLR event inventory,"Manual inventory of landslides in the Philippines, 2022-10-28",2022-10-28,2022-10-28,2022-10-28,213,6.76,124.33,Asia,cold,False,False,658.0,Tropical Storm Nalgae,other
+R049,Norway (NVE),,2013-05-21,2013-05-24,2013-05-21,209,60.96,9.84,Europe and Türkiye,warm,True,True,,,AR
+R050,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2018-11-18",2018-11-18,2018-11-18,2018-11-18,207,12.18,109.18,Asia,cold,False,False,187.0,,TC
+R051,Emberson et al. 2022,S_India_Thrissur,2018-08-07,2018-08-18,2018-08-11,188,10.45,76.69,Asia,warm,True,True,5350.0,,AR
+R052,United States (LIUS),,1996-12-30,1997-01-04,1996-12-30,184,48.0,-122.0,"North America, Pacific side",cold,True,True,8405.0,,AR
+R053,Italy (ITALICA),,2014-05-02,2014-05-10,2014-05-02,179,43.35,13.3,Europe and Türkiye,warm,True,True,11311.0,,AR
+R054,COOLR event inventory,"Manual inventory of landslides in India, 2023-07-09",2023-07-09,2023-07-09,2023-07-09,176,31.02,76.97,Asia,warm,True,True,,,AR
+R055,United States (LIUS),,1996-02-06,1996-02-10,1996-02-06,174,45.58,-122.92,"North America, Pacific side",cold,True,True,13789.0,,AR
+R056,Italy (ITALICA),,2014-11-09,2014-11-19,2014-11-09,173,45.0,9.02,Europe and Türkiye,cold,True,True,8247.0,,AR
+R057,Norway (NVE),,2011-12-25,2011-12-29,2011-12-25,169,61.35,6.95,Europe and Türkiye,cold,True,True,7973.0,,AR
+R058,Canadian Landslide Database,BC_2022-08-10,2022-08-10,2022-08-10,2022-08-10,161,50.24,-121.29,"North America, Pacific side",warm,False,True,2929.0,,other
+R059,COOLR event inventory,"Manual inventory of landslides in South Korea, 2023-07-15",2023-07-15,2023-07-15,2023-07-15,159,36.78,128.48,Asia,warm,True,True,2311.0,,AR
+R060,COOLR event inventory,"Manual inventory of landslides in Rwanda, 2023-05-02",2023-05-02,2023-05-02,2023-05-02,156,-2.02,29.36,Africa,cold,False,False,,,other
+R061,Italy (ITALICA),,2019-11-14,2019-12-03,2019-11-14,144,44.12,8.76,Europe and Türkiye,cold,True,True,1137.0,,AR
+R062,Norway (NVE),,2011-06-09,2011-06-11,2011-06-09,134,61.7,9.0,Europe and Türkiye,warm,True,True,6597.0,,AR
+R063,Emberson et al. 2022,Colombia_Salgar_2015,2015-05-16,2015-05-19,2015-05-17,131,6.01,-76.09,Central America and Caribbean,warm,False,False,14330.0,,other
+R064,United States (LIUS),,2015-12-06,2015-12-15,2015-12-06,122,45.64,-122.73,"North America, Pacific side",cold,True,True,10003.0,,AR
+R065,Norway (NVE),,2013-11-15,2013-11-18,2013-11-15,122,62.44,7.8,Europe and Türkiye,cold,True,True,5659.0,,AR
+R066,United States (LIUS),,2020-10-26,2020-10-26,2020-10-26,118,55.5,-133.0,"North America, Pacific side",cold,True,True,5560.0,,AR
+R067,Global Landslide Catalog,,2010-04-05,2010-04-07,2010-04-05,118,-23.0,-43.0,South America,cold,True,True,13384.0,,AR
+R068,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2020-10-12",2020-10-12,2020-10-12,2020-10-12,116,16.41,107.3,Asia,cold,False,False,210.0,,TC
+R069,COOLR event inventory,"Manual inventory of landslides in Mozambique, 2023-03-13",2023-03-13,2023-03-13,2023-03-13,112,-16.09,35.81,Africa,warm,False,False,120.0,Cyclone Freddy,TC
+R070,United States (LIUS),,1993-10-25,1993-10-26,1993-10-25,112,55.67,-133.0,"North America, Pacific side",cold,True,True,3775.0,,AR
+R071,Italy (ITALICA),,2013-12-01,2013-12-09,2013-12-01,101,42.39,14.28,Europe and Türkiye,cold,False,False,3598.0,,other
+R072,COOLR event inventory,"Automated inventory of landslides in Vietnam, 2017-08-23",2017-08-23,2017-08-23,2017-08-23,99,22.72,103.61,Asia,warm,False,False,484.0,,TC
+R073,Canadian Landslide Database,BC_2018-08-02,2018-08-02,2018-08-02,2018-08-02,98,50.99,-121.49,"North America, Pacific side",warm,False,False,4095.0,,other
+R074,COOLR event inventory,Tanintharyi landslides,2018-07-30,2018-07-30,2018-07-30,91,12.54,99.07,Asia,warm,False,False,3697.0,,other
+R075,Canadian Landslide Database,BC_2018-08-11,2018-08-11,2018-08-11,2018-08-11,85,50.8,-121.34,"North America, Pacific side",warm,False,True,2772.0,,other
+R076,Norway (NVE),,2005-11-14,2005-11-15,2005-11-14,84,61.17,6.42,Europe and Türkiye,cold,True,True,7678.0,,AR
+R077,Italy (ITALICA),,2011-03-01,2011-03-08,2011-03-01,82,43.38,13.33,Europe and Türkiye,cold,True,True,19056.0,,AR
+R078,Canadian Landslide Database,BC_2018-08-03,2018-08-03,2018-08-03,2018-08-03,79,50.81,-121.34,"North America, Pacific side",warm,False,False,4075.0,,other
+R079,Norway (NVE),,2002-01-10,2002-01-12,2002-01-10,78,66.78,14.39,Europe and Türkiye,cold,True,True,9344.0,,AR
+R080,COOLR event inventory,"Manual inventory of landslides in Brazil, 2022-04-02",2022-04-02,2022-04-02,2022-04-02,77,-23.14,-44.21,South America,cold,False,False,12606.0,,other
+R081,COOLR event inventory,"Automated inventory of landslides in Laos, 2018-08-27",2018-08-27,2018-08-27,2018-08-27,72,20.57,104.5,Asia,warm,False,False,3751.0,,other
+R082,United States (LIUS),,1986-01-17,1986-01-19,1986-01-17,71,47.75,-122.0,"North America, Pacific side",cold,True,True,12488.0,,AR
+R083,United States (LIUS),,2015-08-18,2015-08-18,2015-08-18,69,57.33,-135.67,"North America, Pacific side",warm,True,True,7064.0,,AR
+R084,COOLR event inventory,"Manual inventory of landslides in Brazil, 2022-02-15",2022-02-15,2022-02-15,2022-02-15,69,-22.53,-43.17,South America,warm,False,False,9513.0,,other
+R085,Eastern Black Sea (Çömert et al. 2025),Kaptanpasa_2015,2015-11-12,2015-11-12,2015-11-12,67,40.95,40.78,Europe and Türkiye,cold,True,True,3163.0,,AR
+R086,Italy (ITALICA),,2009-04-26,2009-04-28,2009-04-26,67,45.13,8.13,Europe and Türkiye,warm,True,True,13161.0,,AR
+R087,Italy (ITALICA),,2014-10-09,2014-10-14,2014-10-09,66,44.95,9.68,Europe and Türkiye,cold,True,True,5847.0,,AR
+R088,COOLR event inventory,"Automated inventory of landslides in Myanmar, 2019-08-09",2019-08-09,2019-08-09,2019-08-09,66,16.61,97.5,Asia,warm,False,False,2761.0,,other
+R089,Italy (ITALICA),,2019-10-15,2019-10-24,2019-10-15,65,44.28,8.83,Europe and Türkiye,cold,True,True,3845.0,,AR
+R090,Canadian Landslide Database,BC_2022-08-23,2022-08-23,2022-08-23,2022-08-23,65,50.26,-121.1,"North America, Pacific side",warm,False,False,7233.0,,other
+R091,Canadian Landslide Database,BC_2022-07-17,2022-07-17,2022-07-17,2022-07-17,64,50.22,-121.09,"North America, Pacific side",warm,True,True,3963.0,,AR
+R092,Norway (NVE),,2005-09-13,2005-09-14,2005-09-13,62,60.56,6.56,Europe and Türkiye,warm,True,True,439.0,,TC
+R093,Norway (NVE),,2014-10-26,2014-10-30,2014-10-26,59,60.69,6.25,Europe and Türkiye,cold,True,True,6337.0,,AR
+R094,Italy (ITALICA),,2013-11-11,2013-11-16,2013-11-11,58,43.23,13.31,Europe and Türkiye,cold,True,True,5164.0,,AR
+R095,Norway (NVE),,2022-01-12,2022-01-15,2022-01-12,57,62.0,7.89,Europe and Türkiye,cold,True,True,13248.0,,AR
+R096,COOLR event inventory,"Manual Inventory of Landslides in South Africa, 2019-04-23",2019-04-23,2019-04-23,2019-04-23,57,-29.85,30.84,Africa,cold,True,True,2737.0,,AR
+R097,United States (LIUS),,2011-01-13,2011-01-18,2011-01-13,57,45.28,-122.86,"North America, Pacific side",cold,True,True,9858.0,,AR
+R098,United States (LIUS),,2012-01-18,2012-01-26,2012-01-18,56,44.19,-123.31,"North America, Pacific side",cold,True,True,14246.0,,AR
+R099,United States (LIUS),,2015-12-17,2015-12-24,2015-12-17,55,44.57,-123.57,"North America, Pacific side",cold,True,True,10848.0,,AR
+R100,United States (LIUS),,2004-09-16,2004-09-17,2004-09-16,54,35.43,-82.71,"North America, east and interior",warm,False,False,465.0,,TC
+R101,Italy (ITALICA),,2010-10-31,2010-11-03,2010-10-31,53,45.08,9.96,Europe and Türkiye,cold,True,True,5260.0,,AR
+R102,Norway (NVE),,2017-09-30,2017-10-04,2017-09-30,51,59.24,7.44,Europe and Türkiye,warm,True,True,2140.0,,AR
+R103,COOLR event inventory,"Manual inventory of landslides in Colombia, 2023-07-17",2023-07-17,2023-07-17,2023-07-17,48,4.26,-73.83,South America,warm,False,False,4325.0,,other
+R104,Norway (NVE),,2019-07-30,2019-07-30,2019-07-30,48,61.0,6.0,Europe and Türkiye,warm,True,True,9167.0,,AR
+R105,United States (LIUS),,2017-02-05,2017-02-09,2017-02-05,48,45.28,-122.96,"North America, Pacific side",cold,True,True,16637.0,,AR
+R106,Italy (ITALICA),,2009-01-25,2009-02-01,2009-01-25,46,39.62,15.52,Europe and Türkiye,cold,True,True,8409.0,,AR
+R107,Global Fatal Landslide Database,,2009-10-08,2009-10-08,2009-10-08,45,16.5,120.5,Asia,cold,False,False,90.0,,TC
+R108,Italy (ITALICA),,2008-12-11,2008-12-17,2008-12-11,45,40.21,14.42,Europe and Türkiye,cold,True,True,7781.0,,AR
+R109,Italy (ITALICA),,2016-11-24,2016-11-25,2016-11-24,45,44.25,8.0,Europe and Türkiye,cold,True,True,8943.0,,AR
+R110,COOLR event inventory,"Manual inventory of landslides in Indonesia, 2023-03-06",2023-03-06,2023-03-06,2023-03-06,45,2.54,109.01,Oceania and Maritime Southeast Asia,cold,False,False,7267.0,,other
+R111,United States (LIUS),,1997-03-18,1997-03-20,1997-03-18,44,48.0,-122.0,"North America, Pacific side",cold,True,True,9199.0,,AR
+R112,Canadian Landslide Database,AB_2023-06-11,2023-06-11,2023-06-11,2023-06-11,44,49.07,-113.93,"North America, Pacific side",warm,False,True,9075.0,,other
+R113,Italy (ITALICA),,2014-01-15,2014-01-20,2014-01-15,44,44.0,8.64,Europe and Türkiye,cold,True,True,7981.0,,AR
+R114,Norway (NVE),,2011-03-21,2011-03-23,2011-03-21,43,60.82,6.24,Europe and Türkiye,cold,True,True,10338.0,,AR
+R115,Italy (ITALICA),,2009-03-05,2009-03-07,2009-03-05,43,41.64,13.71,Europe and Türkiye,cold,True,True,11264.0,,AR
+R116,United States (LIUS),,2010-12-09,2010-12-13,2010-12-09,43,47.59,-122.06,"North America, Pacific side",cold,True,True,,,AR
+R117,United States (LIUS),,2019-08-20,2019-08-20,2019-08-20,42,55.33,-133.67,"North America, Pacific side",warm,False,True,,,other
+R118,Italy (ITALICA),,2008-12-10,2008-12-13,2008-12-10,42,43.07,12.5,Europe and Türkiye,cold,True,True,11310.0,,AR
+R119,Norway (NVE),,2022-11-10,2022-11-12,2022-11-10,41,60.78,7.0,Europe and Türkiye,cold,True,True,6734.0,,AR
+R120,Norway (NVE),,2012-08-06,2012-08-09,2012-08-06,41,59.5,9.83,Europe and Türkiye,warm,False,True,5934.0,,other
+R121,Norway (NVE),,2017-12-22,2017-12-24,2017-12-22,41,60.5,6.17,Europe and Türkiye,cold,True,True,9985.0,,AR
+R122,Norway (NVE),,2016-12-04,2016-12-05,2016-12-04,40,63.14,10.21,Europe and Türkiye,cold,False,False,,,other
+R123,United States (LIUS),,2014-12-20,2014-12-25,2014-12-20,39,44.37,-123.21,"North America, Pacific side",cold,True,True,14553.0,,AR
+R124,Norway (NVE),,2018-04-17,2018-04-22,2018-04-17,39,61.2,9.65,Europe and Türkiye,warm,True,True,,,AR
+R125,United States (LIUS),,2011-08-28,2011-08-29,2011-08-28,39,40.6,-74.6,"North America, east and interior",warm,False,False,51.0,,TC
+R126,United States (LIUS),,2010-07-20,2010-07-20,2010-07-20,39,35.0,-112.0,"North America, Pacific side",warm,False,False,12313.0,,other
+R127,Italy (ITALICA),,2019-12-20,2019-12-24,2019-12-20,38,44.08,9.08,Europe and Türkiye,cold,True,True,10913.0,,AR
+R128,United States (LIUS),,2010-01-17,2010-01-18,2010-01-17,37,34.0,-118.0,"North America, Pacific side",cold,True,True,18667.0,,AR
+R129,Norway (NVE),,2004-11-14,2004-11-15,2004-11-14,36,61.58,6.58,Europe and Türkiye,cold,True,True,9996.0,,AR
+R130,Norway (NVE),,2015-11-26,2015-11-28,2015-11-26,36,61.4,6.0,Europe and Türkiye,cold,True,True,9204.0,,AR
+R131,United States (LIUS),,2018-05-27,2018-05-31,2018-05-27,36,36.46,-81.46,"North America, east and interior",warm,True,True,804.0,,AR
+R132,Italy (ITALICA),,2020-10-01,2020-10-06,2020-10-01,35,44.18,8.82,Europe and Türkiye,cold,True,True,8504.0,,AR
+R133,Italy (ITALICA),,2011-03-13,2011-03-18,2011-03-13,35,44.47,8.47,Europe and Türkiye,cold,True,True,9266.0,,AR
+R134,Italy (ITALICA),,2008-12-05,2008-12-06,2008-12-05,35,43.29,11.71,Europe and Türkiye,cold,True,True,7960.0,,AR
+R135,Italy (ITALICA),,2009-01-19,2009-01-21,2009-01-19,35,44.12,9.75,Europe and Türkiye,cold,True,True,7888.0,,AR
+R136,Italy (ITALICA),,2011-11-04,2011-11-09,2011-11-04,34,44.9,8.62,Europe and Türkiye,cold,True,True,5261.0,,AR
+R137,Italy (ITALICA),,2012-09-13,2012-09-14,2012-09-13,34,43.0,13.33,Europe and Türkiye,warm,True,True,4531.0,,AR
+R138,United States (LIUS),,2014-03-02,2014-03-08,2014-03-02,33,46.29,-122.67,"North America, Pacific side",cold,True,True,7355.0,,AR
+R139,United States (LIUS),,1996-02-12,1996-02-16,1996-02-12,33,45.62,-123.0,"North America, Pacific side",cold,False,False,10931.0,,other
+R140,Italy (ITALICA),,2018-10-31,2018-11-11,2018-10-31,33,44.12,8.76,Europe and Türkiye,cold,True,True,2311.0,,AR
+R141,Italy (ITALICA),,2018-10-27,2018-10-29,2018-10-27,33,44.11,8.89,Europe and Türkiye,cold,True,True,5193.0,,AR
+R142,Norway (NVE),,2020-11-17,2020-11-19,2020-11-17,32,60.6,6.4,Europe and Türkiye,cold,True,True,3707.0,,AR
+R143,United States (LIUS),,2012-03-29,2012-04-05,2012-03-29,32,44.24,-123.33,"North America, Pacific side",cold,True,True,9630.0,,AR
+R144,Italy (ITALICA),,2006-01-02,2006-01-05,2006-01-02,32,43.09,13.36,Europe and Türkiye,cold,True,True,4954.0,,AR
+R145,United States (LIUS),,2007-10-01,2007-10-05,2007-10-01,31,44.22,-72.56,"North America, east and interior",cold,True,True,3726.0,,AR
+R146,Italy (ITALICA),,2018-05-01,2018-05-07,2018-05-01,31,40.06,8.89,Europe and Türkiye,warm,True,True,9870.0,,AR
+R147,Italy (ITALICA),,2015-03-24,2015-03-28,2015-03-24,31,43.23,13.15,Europe and Türkiye,cold,True,True,13052.0,,AR
+R148,United States (LIUS),,2014-08-12,2014-08-12,2014-08-12,31,33.0,-112.0,"North America, Pacific side",warm,True,True,3911.0,,AR
+R149,Norway (NVE),,2013-12-10,2013-12-11,2013-12-10,31,66.2,13.6,Europe and Türkiye,cold,True,True,7612.0,,AR
+R150,Norway (NVE),,2013-05-16,2013-05-20,2013-05-16,31,60.27,8.4,Europe and Türkiye,warm,True,True,7378.0,,AR
+R151,Italy (ITALICA),,2005-12-03,2005-12-13,2005-12-03,30,43.17,12.94,Europe and Türkiye,cold,True,True,4162.0,,AR
+R152,United States (LIUS),,2012-03-12,2012-03-17,2012-03-12,30,44.73,-123.05,"North America, Pacific side",cold,True,True,13582.0,,AR
+R153,United States (LIUS),,2011-03-12,2011-03-16,2011-03-12,30,46.14,-122.71,"North America, Pacific side",cold,True,True,,,AR
+R154,United States (LIUS),,2021-08-17,2021-08-17,2021-08-17,30,35.5,-83.0,"North America, east and interior",warm,False,False,477.0,,TC
+R155,United States (LIUS),,2017-03-08,2017-03-17,2017-03-08,30,45.67,-122.67,"North America, Pacific side",cold,True,True,12597.0,,AR
+R156,Italy (ITALICA),,2013-10-21,2013-10-22,2013-10-21,30,43.67,10.0,Europe and Türkiye,cold,True,True,5539.0,,AR
+R157,Global Landslide Catalog,,2013-06-15,2013-06-19,2013-06-15,30,30.0,80.09,Asia,warm,True,True,4395.0,,AR
+R158,Global Landslide Catalog,,2010-09-17,2010-09-20,2010-09-17,29,30.71,78.59,Asia,warm,True,True,3583.0,,AR
+R159,Italy (ITALICA),,2021-10-03,2021-10-07,2021-10-03,29,44.27,8.73,Europe and Türkiye,cold,True,True,2616.0,,AR
+R160,Italy (ITALICA),,2009-05-31,2009-06-04,2009-05-31,29,42.8,13.0,Europe and Türkiye,warm,True,True,,,AR
+R161,Norway (NVE),,2011-11-26,2011-11-27,2011-11-26,29,61.0,6.33,Europe and Türkiye,cold,True,True,10469.0,,AR
+R162,Canadian Landslide Database,BC_2015-09-20,2015-09-20,2015-09-20,2015-09-20,28,50.25,-123.57,"North America, Pacific side",warm,True,True,6739.0,,AR
+R163,United States (LIUS),,2011-03-23,2011-03-25,2011-03-23,28,37.89,-122.44,"North America, Pacific side",cold,True,True,8775.0,,AR
+R164,Norway (NVE),,2021-11-23,2021-11-24,2021-11-23,28,63.0,10.0,Europe and Türkiye,cold,True,True,11627.0,,AR
+R165,United States (LIUS),,1986-02-01,1986-02-01,1986-02-01,28,48.0,-122.0,"North America, Pacific side",cold,True,True,10133.0,,AR
+R166,Italy (ITALICA),,2009-02-05,2009-02-08,2009-02-05,28,44.33,9.8,Europe and Türkiye,cold,True,True,8242.0,,AR
+R167,United States (LIUS),,2017-01-08,2017-01-11,2017-01-08,28,39.29,-122.14,"North America, Pacific side",cold,True,True,,,AR
+R168,United States (LIUS),,2015-02-05,2015-02-09,2015-02-05,28,44.5,-123.39,"North America, Pacific side",cold,True,True,8224.0,,AR
+R169,Italy (ITALICA),,2018-03-07,2018-03-13,2018-03-07,28,44.15,9.0,Europe and Türkiye,cold,True,True,8332.0,,AR
+R170,United States (LIUS),,2014-02-10,2014-02-15,2014-02-10,27,45.0,-122.61,"North America, Pacific side",cold,True,True,16406.0,,AR
+R171,Eastern Black Sea (Çömert et al. 2025),Hopa_2012,2012-09-23,2012-09-23,2012-09-23,26,41.38,41.42,Europe and Türkiye,warm,False,False,5877.0,,other
+R172,Italy (ITALICA),,2010-06-19,2010-06-21,2010-06-19,26,44.0,10.25,Europe and Türkiye,warm,False,False,10352.0,,other
+R173,Global Landslide Catalog,,2010-10-18,2010-10-18,2010-10-18,26,16.83,121.17,Asia,cold,False,False,8.0,,TC
+R174,Italy (ITALICA),,2015-09-13,2015-09-15,2015-09-13,26,44.71,9.0,Europe and Türkiye,warm,True,True,5791.0,,AR
+R175,Norway (NVE),,2014-03-20,2014-03-21,2014-03-20,26,60.83,5.83,Europe and Türkiye,cold,True,True,11511.0,,AR
+R176,Italy (ITALICA),,2009-01-12,2009-01-15,2009-01-12,26,38.0,15.14,Europe and Türkiye,cold,True,True,8245.0,,AR
+R177,Italy (ITALICA),,2003-01-24,2003-01-26,2003-01-24,26,41.56,14.78,Europe and Türkiye,cold,False,False,8704.0,,other
+R178,United States (LIUS),,2010-12-21,2010-12-22,2010-12-21,25,33.62,-117.62,"North America, Pacific side",cold,True,True,5187.0,,AR
+R179,COOLR event inventory,"Automated inventory of landslides in China, 2018-06-23",2018-06-23,2018-06-23,2018-06-23,25,22.48,103.05,Asia,warm,True,True,,,AR
+R180,United States (LIUS),,2012-11-17,2012-11-22,2012-11-17,25,44.17,-123.5,"North America, Pacific side",cold,True,True,12541.0,,AR
+R181,United States (LIUS),,2017-02-15,2017-02-17,2017-02-15,25,46.44,-122.67,"North America, Pacific side",cold,True,True,11952.0,,AR
+R182,Italy (ITALICA),,2014-01-30,2014-02-04,2014-01-30,25,42.43,13.0,Europe and Türkiye,cold,True,True,10683.0,,AR
+R183,Italy (ITALICA),,2010-10-04,2010-10-08,2010-10-04,25,44.5,8.88,Europe and Türkiye,cold,True,True,6535.0,,AR
+R184,Italy (ITALICA),,2012-02-21,2012-02-23,2012-02-21,24,38.29,15.43,Europe and Türkiye,cold,True,True,7886.0,,AR
+R185,Italy (ITALICA),,2013-12-25,2013-12-30,2013-12-25,24,44.11,8.44,Europe and Türkiye,cold,True,True,7487.0,,AR
+R186,Italy (ITALICA),,2004-10-31,2004-11-02,2004-10-31,24,46.25,10.92,Europe and Türkiye,cold,True,True,,,AR
+R187,Italy (ITALICA),,2005-04-10,2005-04-12,2005-04-10,24,43.73,12.36,Europe and Türkiye,warm,True,True,8859.0,,AR
+R188,Canadian Landslide Database,BC_2018-06-22,2018-06-22,2018-06-22,2018-06-22,24,50.81,-121.22,"North America, Pacific side",warm,False,False,,,other
+R189,COOLR event inventory,"Manual inventory of landslides in Brazil, 2022-05-28",2022-05-28,2022-05-28,2022-05-28,24,-8.11,-34.97,South America,cold,False,False,7332.0,,other
+R190,United States (LIUS),,2010-08-02,2010-08-03,2010-08-02,24,44.0,-72.0,"North America, east and interior",warm,False,False,3817.0,,other
+R191,Norway (NVE),,2020-01-20,2020-01-21,2020-01-20,24,62.2,7.7,Europe and Türkiye,cold,True,True,10119.0,,AR
+R192,Norway (NVE),,2015-12-04,2015-12-07,2015-12-04,24,59.58,6.42,Europe and Türkiye,cold,True,True,,,AR
+R193,Norway (NVE),,2017-12-05,2017-12-07,2017-12-05,24,60.83,5.67,Europe and Türkiye,cold,True,True,6930.0,,AR
+R194,Italy (ITALICA),,2021-01-22,2021-01-25,2021-01-22,24,44.18,9.0,Europe and Türkiye,cold,True,True,7584.0,,AR
+R195,United States (LIUS),,2015-03-02,2015-03-07,2015-03-02,23,37.71,-82.14,"North America, east and interior",cold,True,True,14051.0,,AR
+R196,United States (LIUS),,2011-07-10,2011-07-11,2011-07-10,23,31.33,-109.67,"North America, Pacific side",warm,False,False,1559.0,,other
+R197,United States (LIUS),,2011-02-28,2011-03-02,2011-02-28,23,45.55,-122.82,"North America, Pacific side",cold,True,True,10750.0,,AR
+R198,COOLR event inventory,"Manual inventory of landslides in the Philippines, 2022-04-10",2022-04-10,2022-04-10,2022-04-10,23,10.68,124.86,Asia,warm,False,False,44.0,Tropical Storm Megi,TC
+R199,Italy (ITALICA),,2018-03-02,2018-03-11,2018-03-02,23,43.44,13.39,Europe and Türkiye,cold,True,True,7452.0,,AR
+R200,Italy (ITALICA),,2010-05-13,2010-05-13,2010-05-13,23,42.0,13.0,Europe and Türkiye,warm,True,True,,,AR
+R201,Italy (ITALICA),,2017-02-06,2017-02-13,2017-02-06,23,43.08,13.38,Europe and Türkiye,cold,True,True,7655.0,,AR
+R202,Global Landslide Catalog,,2017-07-08,2017-07-12,2017-07-08,23,25.93,93.43,Asia,warm,False,False,13480.0,,other
+R203,United States (LIUS),,1986-01-01,1986-01-01,1986-01-01,22,48.0,-122.0,"North America, Pacific side",cold,False,False,,,other
+R204,Italy (ITALICA),,2009-12-22,2009-12-26,2009-12-22,22,44.0,9.2,Europe and Türkiye,cold,True,True,8077.0,,AR
+R205,Italy (ITALICA),,2014-11-04,2014-11-07,2014-11-04,22,45.38,9.92,Europe and Türkiye,cold,True,True,7940.0,,AR
+R206,COOLR event inventory,"Manual inventory of landslides in the Democratic Republic of Congo, 2023-04-03",2023-04-03,2023-04-03,2023-04-03,22,-1.24,28.84,Africa,cold,False,False,8587.0,,other
+R207,United States (LIUS),,2011-07-14,2011-07-14,2011-07-14,22,36.0,-83.0,"North America, east and interior",warm,False,False,11338.0,,other
+R208,United States (LIUS),,2010-05-02,2010-05-03,2010-05-02,22,37.89,-82.89,"North America, east and interior",warm,True,True,,,AR
+R209,United States (LIUS),,2003-12-24,2003-12-25,2003-12-24,22,34.0,-117.0,"North America, Pacific side",cold,True,True,11150.0,,AR
+R210,United States (LIUS),,1998-12-27,1998-12-29,1998-12-27,22,45.5,-123.25,"North America, Pacific side",cold,True,True,8808.0,,AR
+R211,United States (LIUS),,1996-03-31,1996-04-03,1996-03-31,21,45.57,-123.0,"North America, Pacific side",cold,True,True,9425.0,,AR
+R212,Norway (NVE),,2014-12-30,2014-12-31,2014-12-30,21,66.0,13.0,Europe and Türkiye,cold,True,True,9865.0,,AR
+R213,United States (LIUS),,2020-04-13,2020-04-13,2020-04-13,21,35.5,-83.0,"North America, east and interior",warm,True,True,,,AR
+R214,Norway (NVE),,2005-01-07,2005-01-07,2005-01-07,21,60.5,7.0,Europe and Türkiye,cold,True,True,11429.0,,AR
+R215,Italy (ITALICA),,2014-02-05,2014-02-11,2014-02-05,21,44.0,9.07,Europe and Türkiye,cold,True,True,8480.0,,AR
+R216,Italy (ITALICA),,2011-03-01,2011-03-02,2011-03-01,21,39.29,15.57,Europe and Türkiye,cold,True,True,18587.0,,AR
+R217,Italy (ITALICA),,2004-05-04,2004-05-08,2004-05-04,20,45.83,10.25,Europe and Türkiye,warm,True,True,6749.0,,AR
+R218,Italy (ITALICA),,2004-12-04,2004-12-06,2004-12-04,20,42.75,12.0,Europe and Türkiye,cold,True,True,5531.0,,AR
+R219,United States (LIUS),,2016-03-11,2016-03-15,2016-03-11,20,38.94,-122.41,"North America, Pacific side",cold,True,True,11784.0,,AR
+R220,United States (LIUS),,2009-11-16,2009-11-17,2009-11-16,20,44.0,-72.33,"North America, east and interior",cold,True,True,15034.0,,AR
+R221,Norway (NVE),,2016-12-07,2016-12-09,2016-12-07,20,62.64,8.91,Europe and Türkiye,cold,True,True,8259.0,,AR
+R222,Norway (NVE),,2016-12-30,2016-12-31,2016-12-30,20,61.11,6.89,Europe and Türkiye,cold,True,True,,,AR
+R223,Norway (NVE),,2013-04-14,2013-04-18,2013-04-14,20,61.0,7.74,Europe and Türkiye,warm,True,True,9426.0,,AR
+R224,United States (LIUS),,1996-02-20,1996-02-23,1996-02-20,20,45.33,-123.0,"North America, Pacific side",cold,True,True,16117.0,,AR
+R225,Global Fatal Landslide Database,,2017-06-12,2017-06-13,2017-06-12,20,22.0,92.0,Asia,warm,True,True,2314.0,,AR
+R226,Global Fatal Landslide Database,,2016-07-25,2016-07-28,2016-07-25,20,28.0,83.5,Asia,warm,True,True,2258.0,,AR
+R227,Italy (ITALICA),,2009-04-21,2009-04-22,2009-04-21,20,42.33,14.33,Europe and Türkiye,warm,True,True,,,AR
+R228,Italy (ITALICA),,2010-03-10,2010-03-11,2010-03-10,20,43.3,13.0,Europe and Türkiye,cold,True,True,7954.0,,AR
+R229,Italy (ITALICA),,2009-10-22,2009-10-25,2009-10-22,20,41.1,15.1,Europe and Türkiye,cold,True,True,9925.0,,AR
+R230,COOLR event inventory,"Manual inventory of landslides in Puerto Rico, 2022-09-19",2022-09-19,2022-09-19,2022-09-19,20,18.18,-66.52,Central America and Caribbean,warm,False,False,58.0,Hurricane Fiona,TC
+R231,Canadian Landslide Database,AB_2024-08-24,2024-08-24,2024-08-24,2024-08-24,20,52.92,-117.98,"North America, Pacific side",warm,False,True,4005.0,,other
