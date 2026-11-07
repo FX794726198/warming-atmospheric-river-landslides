@@ -2,7 +2,7 @@
 
 Code and a minimal data package for the manuscript
 
-> Feng, X., Du, J., Chai, B. & Lombardo, L. *Warming weakens a thermal constraint on atmospheric-river landslides.* (submitted to *Nature Communications*).
+> Feng, X., Du, J., Chai, B. & Lombardo, L. *Warming weakens a thermal constraint on atmospheric-river landslides.* (submitted).
 
 The package redraws every figure of the paper and its Supplementary Information from the data in `data/`, gives the supplementary tables and Supplementary Data 1, and holds the scripts that produced the data from the public sources, including the set-up of the WRF experiments.
 
