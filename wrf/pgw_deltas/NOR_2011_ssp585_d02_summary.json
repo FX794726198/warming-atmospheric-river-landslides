@@ -1,0 +1,14 @@
+{
+ "d02": {
+  "dT2m": 4.079792089718557,
+  "dT850": 3.7412182447689806,
+  "dT2m_land": 5.3141551762418295,
+  "dSST_ocean": 2.4454691218130704,
+  "dZ500": 76.04397189311398,
+  "files": 1
+ },
+ "delta_file": "/scratch/$USER/ar_pgw/cmip6/delta_ssp585_monthly.npz",
+ "month_weights": {
+  "12": 1.0
+ }
+}

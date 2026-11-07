@@ -1,0 +1,9 @@
+The data files in data/, tables/, supplementary_data/ and wrf/ (except scripts) and the figures in fig/
+are licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0),
+https://creativecommons.org/licenses/by/4.0/
+
+Copyright (c) 2026 Xiao Feng, Juan Du, Bo Chai and Luigi Lombardo
+
+They are derived from third-party data (ERA5, the AR catalogue of Chen et al., IBTrACS, CMIP6,
+Copernicus GLO-90, GHS-POP, GRIP4, Natural Earth and the landslide inventories cited in the paper),
+which keep their own licences and should be cited as described in the paper.

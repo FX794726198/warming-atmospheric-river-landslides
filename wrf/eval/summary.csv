@@ -1,0 +1,7 @@
+event,n_stations,n_obs_ge_1mm,window,median_obs_mm,median_ctl_mm,median_bias_pct,station_mean_bias_pct,spearman,share_within_factor2,median_pgw585_mm,candidates_in_domain,excluded_far_from_land
+NOR_2011,389,282,"days 24-27 Dec, model 24 Dec 00Z - 28 Dec 00Z",6.8,11.9,3.4,-8.3,0.927,0.762,7.0,655,13
+BC_2021,758,727,"days 13-16 Nov, model 12 Nov 12Z - 16 Nov 12Z (four 24 h periods 12Z-12Z; the run ends 16 Nov 12Z). Each 12Z-12Z period ends 3 h before a 07 PST (15Z) morning reading of the same date",46.1,41.0,-14.3,-19.9,0.891,0.799,66.2,3560,5
+ORE_1996,375,373,"days 16-19 Nov, model 16 Nov 00Z - 20 Nov 00Z",86.3,88.1,-0.2,-3.0,0.914,0.93,96.1,3324,3
+LIG_2014,119,107,"days 9-16 Nov, model 9 Nov 00Z - 17 Nov 00Z",36.1,34.7,27.7,7.3,0.562,0.477,33.6,244,0
+RSB_2024,0,0,"days 27 Apr - 2 May, model 27 Apr 00Z - 3 May 00Z",,,,,,,,467,0
+RSB_2024_chirps,17957,17379,"GRIDDED, not stations: CHIRPS v2.0 0.05 deg cells over d02 interior land (n_stations = cells); days 27 Apr - 2 May, model 27 Apr 00Z - 3 May 00Z; station_mean_bias_pct = bias of the cos-lat area means (112.2 vs 127.8 mm); Pearson 0.788; at 0.25 deg: 751 cells, Spearman 0.874, Pearson 0.806",120.9,70.7,-32.6,-12.3,0.865,0.602,87.7,,
