@@ -34,8 +34,8 @@ for k, r in enumerate(rules[1:]):
 for k, x in enumerate((0.3, 51, 92.5, 134)): L(f, H, 'abcd'[k], x, H - 0.3)
 print('S1', overlap_check(f)); f.savefig(f'{OUT}/FigS1.png', dpi=300); plt.close(f)
 
-# ---------------- Fig. S2 rain-matched odds
-RM = pd.read_csv(f'{S}/rain_matched.csv'); MH = pd.read_csv(f'{S}/rain_matched_mh.csv').set_index('src').OR_MH
+# ---------------- Fig. S2 rain-matched probabilities
+RM = pd.read_csv(f'{DATA}/proc/prob/rain_matched_prob.csv'); MH = pd.read_csv(f'{DATA}/proc/prob/rain_matched_mh_prob.csv'); MH = MH[MH.strata == 'cell x rain x month'].set_index('src').RR_MH
 RL = ['<5', '5–10', '10–20', '20–40', '40–80', '≥80']
 H = 56; f, ax_mm = newfig(H)
 a = ax_mm(12, 11, 70, H - 15); b = ax_mm(103, 11, 70, H - 15)
@@ -43,19 +43,19 @@ for s_, (lab, col) in INV.items():
     q = RM[RM.src == s_].set_index('rain').reindex(RL)
     a.plot(range(6), q.p_ar * 100, '-o', color=col, ms=2.4, lw=1.0, label=lab)
     a.plot(range(6), q.p_no * 100, '--', color=col, lw=0.8)
-    b.plot(range(6), q.OR, '-o', color=col, ms=2.4, lw=1.0, label=f'{lab} (MH {MH[s_]:.2f})')
+    b.plot(range(6), q.RR, '-o', color=col, ms=2.4, lw=1.0, label=f'{lab} (MH {MH[s_]:.2f})')
 a.set_yscale('log'); a.set_xticks(range(6)); a.set_xticklabels(RL); a.set_xlabel('2-day rain at the cell (mm)'); a.set_ylabel('Cell-days with a landslide (%)')
 a.plot([], [], 'k-', lw=1.0, label='AR days'); a.plot([], [], 'k--', lw=0.8, label='Other days')
 a.legend(loc='upper left', frameon=False, fontsize=5.5, ncol=2, handlelength=1.4, borderaxespad=0.1, labelspacing=0.2)
 b.axhline(1, color='#999999', lw=0.6, ls=(0, (2, 1.5)))
-b.set_xticks(range(6)); b.set_xticklabels(RL); b.set_xlabel('2-day rain at the cell (mm)'); b.set_ylabel('Odds ratio, AR vs other days'); b.set_ylim(0.5, 3.5)
+b.set_xticks(range(6)); b.set_xticklabels(RL); b.set_xlabel('2-day rain at the cell (mm)'); b.set_ylabel('Relative probability, AR vs other days'); b.set_ylim(0.5, 3.0)
 b.legend(loc='upper left', frameon=False, fontsize=5.5, handlelength=1.2, borderaxespad=0.1, labelspacing=0.2)
 for x in (a, b): x.spines[['top', 'right']].set_visible(False)
 L(f, H, 'a', 0.3, H - 0.3); L(f, H, 'b', 91, H - 0.3)
 print('S2', overlap_check(f)); f.savefig(f'{OUT}/FigS2.png', dpi=300); plt.close(f)
 
 # ---------------- Fig. S3 which ARs set off landslides
-YD = pd.read_csv(f'{S}/yield.csv'); ST = pd.read_csv(f'{S}/ar_storms_region.csv'); LG = pd.read_csv(f'{S}/episode_logit.csv')
+YD = pd.read_csv(f'{S}/yield.csv'); ST = pd.read_csv(f'{S}/ar_storms_region.csv'); LG = pd.read_csv(f'{DATA}/proc/prob/episode_prob.csv'); LG = LG[LG.fig == 'yield']
 EP = pd.read_parquet(f'{S}/episodes_min.parquet')
 H = 54; f, ax_mm = newfig(H)
 a = ax_mm(10, 10, 34, H - 15); b = ax_mm(54, 10, 32, H - 15); c = ax_mm(106, 10, 30, H - 15); d = ax_mm(149, 10, 32, H - 15)
@@ -74,10 +74,10 @@ VN = [('z_rain_rel', '2-day rain'), ('z_dur_h', 'Duration'), ('z_ivt_max', 'Peak
 for i, (v, lab) in enumerate(VN[::-1]):
     for j, (s_, (nm, col)) in enumerate(INV.items()):
         r = LG[(LG.src == s_) & (LG['var'] == v)].iloc[0]; y = i + 0.28 - j * 0.14
-        c.plot([r.lo, r.hi], [y, y], color=col, lw=0.7); c.plot(r.OR, y, 'o', color=col, ms=2.0)
+        c.plot([r.lo, r.hi], [y, y], color=col, lw=0.7); c.plot(r.RR, y, 'o', color=col, ms=2.0)
     c.text(0.085, i, lab, ha='right', va='center', fontsize=5.6)
 c.axvline(1, color='#999999', lw=0.6, ls=(0, (2, 1.5))); c.set_xscale('log'); c.set_xlim(0.1, 20); c.set_xticks([0.2, 1, 5]); c.set_xticklabels(['0.2', '1', '5'])
-c.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); c.set_yticks([]); c.spines['left'].set_visible(False); c.set_xlabel('Odds ratio (per SD)')
+c.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); c.set_yticks([]); c.spines['left'].set_visible(False); c.set_xlabel('Relative probability (per SD)')
 q = EP[EP.cold & EP.t2ge0 & EP.ext].copy(); q['ac'] = pd.cut(q.a30, [-1, 33.3, 66.7, 101], labels=['Dry', 'Normal', 'Wet'])
 ACOL = ['#F4A582', '#BDBDBD', '#4393C3']
 for k, ac in enumerate(['Dry', 'Normal', 'Wet']):
@@ -92,7 +92,7 @@ print('S3', overlap_check(f)); f.savefig(f'{OUT}/FigS3.png', dpi=300); plt.close
 # ---------------- Fig. S4 land surface
 stt = np.load(f'{O}/era5_static.npz'); SD = stt['standard_deviation_of_orography']
 EP['sdor'] = SD[EP.ci.values, EP.cj.values]
-LS = pd.read_csv(f'{S}/episode_logit_surface.csv')
+LS = pd.read_csv(f'{DATA}/proc/prob/episode_prob.csv'); LS = LS[LS.fig == 'surface']
 FS = pd.read_parquet(f'{S}/events_fp_steep.parquet'); FS['arm'] = FS.ar_frac >= 0.5
 H = 52; f, ax_mm = newfig(H)
 a = ax_mm(11, 10, 44, H - 14); b = ax_mm(92, 10, 36, H - 14); c = ax_mm(141, 10, 40, H - 14)
@@ -110,10 +110,10 @@ VS = [('z_rain_rel', '2-day rain'), ('z_sdor', 'Relief'), ('z_elev', 'Elevation'
 for i, (v, lab) in enumerate(VS[::-1]):
     for j, (s_, (nm, col)) in enumerate(INV.items()):
         r = LS[(LS.src == s_) & (LS['var'] == v)].iloc[0]; y = i + 0.28 - j * 0.14
-        b.plot([r.lo, r.hi], [y, y], color=col, lw=0.7); b.plot(r.OR, y, 'o', color=col, ms=2.0)
+        b.plot([r.lo, r.hi], [y, y], color=col, lw=0.7); b.plot(r.RR, y, 'o', color=col, ms=2.0)
     b.text(0.24, i, lab, ha='right', va='center', fontsize=5.6)
 b.axvline(1, color='#999999', lw=0.6, ls=(0, (2, 1.5))); b.set_xscale('log'); b.set_xlim(0.3, 18); b.set_xticks([0.5, 1, 2, 5, 10]); b.set_xticklabels(['0.5', '1', '2', '5', '10'])
-b.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); b.set_yticks([]); b.spines['left'].set_visible(False); b.set_xlabel('Odds ratio (per SD)')
+b.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); b.set_yticks([]); b.spines['left'].set_visible(False); b.set_xlabel('Relative probability (per SD)')
 for k, (am, colr, lab) in enumerate(((True, NAVY, 'AR events'), (False, '#BDBDBD', 'Other events'))):
     v = []
     for s_ in INV:

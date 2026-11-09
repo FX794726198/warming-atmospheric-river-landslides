@@ -1,7 +1,7 @@
 """NC Fig. 3 Freezing restrains AR landslide events, and the brake has begun to loosen.
 a Change in the snow-dominated share of cold-season AR extreme precipitation over mountains (>=300 m), 1995-2024 minus 1941-1970 (ERA5 0.25 deg, 1 deg cells).
-b Landslide chance of a cold-season AR extreme-rain episode by 2-day mean T2m, relative to 6 C (pooled, cluster-bootstrap band; inventories thin).
-c Odds ratios of a landslide by temperature class (cell fixed effects) and per inventory (below vs above 0 C).
+b Landslide probability of a cold-season AR extreme-rain episode by 2-day mean T2m, relative to 6 C (pooled, cluster-bootstrap band; inventories thin).
+c Relative probability of a landslide by temperature class (cell fixed effects) and per inventory (below vs above 0 C).
 d Snow-dominated share of AR extreme cell-days, 11-year running mean, per region.
 e Share of mountain land where most AR extreme precipitation falls as snow, 1941-1970 and 1995-2024."""
 import os as _os
@@ -18,7 +18,7 @@ M = pd.read_csv(f'{N7}/map_change_1deg.csv'); M['diff'] = M.s2 - M.s1
 import os
 S = pd.read_csv(f'{N7}/regional_series.csv' if os.path.exists(f'{N7}/regional_series.csv') else f'{N7}/regional_series6.csv')
 PA = pd.read_csv(f'{N7}/protected_area_base7922.csv'); PA['frac'] = PA.area_snow_dominated_km2 / PA.area_assessed_km2 * 100
-BC_ = pd.read_csv(f'{N3}/brake_curve_boot.csv'); BI = pd.read_csv(f'{N3}/brake_curve.csv'); FE = pd.read_csv(f'{DATA}/proc/rev/brake_robust.csv'); FE = FE[FE.model == '+ month FE + duration + year'].set_index('term').loc[['p0_4', 'm4_0', 'lt_m4']].reset_index()
+BC_ = pd.read_csv(f'{N3}/brake_curve_boot.csv'); BI = pd.read_csv(f'{N3}/brake_curve.csv'); FE = pd.read_csv(f'{DATA}/proc/prob/brake_prob.csv'); FE = FE[FE.model == '+ month FE + duration + year'].set_index('term').loc[['p0_4', 'm4_0', 'lt_m4']].reset_index()
 
 REG = {  # code: (name, short label, box (lat0, lat1, lon0, lon1), colour)
     'SCA': ('Scandinavia', 'Scandinavia', (57, 71, 4, 20), '#0072B2'),
@@ -87,7 +87,7 @@ axb.fill_between(BC_.t2, BC_.lo, BC_.hi, color=NAVY, alpha=0.18, lw=0, zorder=3)
 axb.plot(BC_.t2, BC_.rel, color=NAVY, lw=1.8, zorder=4)
 axb.axhline(1, color='#999999', lw=0.4, ls=(0, (2, 1.5)), zorder=1)
 axb.set_xlim(-12, 12); axb.set_ylim(0, 1.25); axb.set_xticks([-10, -5, 0, 5, 10])
-axb.set_xlabel('2-day mean T$_{2m}$ (°C)'); axb.set_ylabel('Landslide chance\n(relative to 6 °C)', linespacing=1.0)
+axb.set_xlabel('2-day mean T$_{2m}$ (°C)'); axb.set_ylabel('Landslide probability\n(relative to 6 °C)', linespacing=1.0)
 axb.spines[['top', 'right']].set_visible(False)
 axb.text(-11.4, 1.2, 'Below freezing', fontsize=5.8, color='#3B5B85', va='top')
 v0 = BC_.loc[(BC_.t2 - 0).abs().idxmin()]; v4 = BC_.loc[(BC_.t2 + 4).abs().idxmin()]
@@ -96,24 +96,25 @@ axb.text(-11.4, 0.96, f'{v0.rel:.2f} at 0 °C\n{v4.rel:.2f} at −4 °C', fontsi
 axb.legend(handles=[Line2D([], [], color=NAVY, lw=1.6, label='All, 95% band')] + [Line2D([], [], color=c, lw=0.8, label=l) for l, c in INV.values()],
            loc='lower right', frameon=False, fontsize=5.2, handlelength=1.0, labelspacing=0.12, borderaxespad=0, handletextpad=0.3)
 
-# ---------------------------------------------------------------- c: odds ratios
+# ---------------------------------------------------------------- c: relative probabilities
 rb, rh = 11.5, 35.5
 axc = ax_mm(20, rb, 24, rh)
-rows = [('0 to 4 °C', *FE.loc[0, ['OR', 'lo', 'hi']].values, NAVY), ('−4 to 0 °C', *FE.loc[1, ['OR', 'lo', 'hi']].values, NAVY),
-        ('Below −4 °C', *FE.loc[2, ['OR', 'lo', 'hi']].values, NAVY)]
-INVOR = [('NVE', 0.45, 0.28, 0.73), ('USGS', 0.55, 0.27, 1.13), ('ITALICA', 0.63, 0.24, 1.67), ('GLC', 0.52, 0.24, 1.15), ('GFLD', 0.27, 0.05, 1.54)]
+rows = [('0 to 4 °C', *FE.loc[0, ['RR', 'lo', 'hi']].values, NAVY), ('−4 to 0 °C', *FE.loc[1, ['RR', 'lo', 'hi']].values, NAVY),
+        ('Below −4 °C', *FE.loc[2, ['RR', 'lo', 'hi']].values, NAVY)]
+IP = pd.read_csv(f'{DATA}/proc/prob/brake_inv_prob.csv').set_index('src')
+INVOR = [(s_, IP.loc[s_, 'RR'], IP.loc[s_, 'lo'], IP.loc[s_, 'hi']) for s_ in ['NVE', 'USGS', 'ITALICA', 'GLC', 'GFLD']]
 rows += [(INV[s][0], o_, l_, h_, INV[s][1]) for s, o_, l_, h_ in INVOR]
 ys = [9, 8, 7, 4.6, 3.6, 2.6, 1.6, 0.6]
 for (lab, o_, l_, h_, c), y in zip(rows, ys):
     axc.plot([l_, h_], [y, y], color=c, lw=0.9); axc.plot(o_, y, 'o', color=c, ms=3.4, mec='white', mew=0.4)
-    axc.text(0.032, y, lab, ha='right', va='center', fontsize=6, clip_on=False)
+    axc.text(0.0491, y, lab, ha='right', va='center', fontsize=6, clip_on=False)
 axc.axvline(1, color='#777777', lw=0.5, ls=(0, (2, 1.5)))
-axc.set_xscale('log'); axc.set_xlim(0.04, 2.2); axc.set_xticks([0.05, 0.2, 0.5, 1, 2]); axc.set_xticklabels(['0.05', '0.2', '0.5', '1', '2']); axc.minorticks_off()
+axc.set_xscale('log'); axc.set_xlim(0.06, 2.2); axc.set_xticks([0.1, 0.3, 1, 2]); axc.set_xticklabels(['0.1', '0.3', '1', '2']); axc.minorticks_off()
 axc.set_ylim(0, 10.6); axc.set_yticks([])
 axc.spines[['top', 'right', 'left']].set_visible(False)
-axc.text(0.0035, 10.35, 'Same cell, vs ≥4 °C', fontsize=6, fontweight='bold', va='center', clip_on=False)
-axc.text(0.0035, 5.8, 'Per inventory, <0 vs ≥0 °C', fontsize=6, fontweight='bold', va='center', clip_on=False)
-axc.set_xlabel('Odds ratio of a landslide')
+axc.text(0.00669, 10.35, 'Same cell, vs ≥4 °C', fontsize=6, fontweight='bold', va='center', clip_on=False)
+axc.text(0.00669, 5.8, 'Per inventory, <0 vs ≥0 °C', fontsize=6, fontweight='bold', va='center', clip_on=False)
+axc.set_xlabel('Relative landslide probability')
 
 # ---------------------------------------------------------------- d: regional series
 axd = ax_mm(56.0, rb, 38.5, rh)

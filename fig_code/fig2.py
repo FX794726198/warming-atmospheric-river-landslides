@@ -2,7 +2,7 @@
 a-c Three cold-season AR events: integrated water vapour transport (IVT, ARCO ERA5, 0.25 deg) at the 6-h step nearest the landslide peak,
 the AR object of the Chen et al. catalogue, event-total rain >= 100 mm and the landslides.
 d Extreme-rain footprint of landslide events (land cells with 2-day rain >= local P99 within +-4 deg), AR vs other events.
-e Share of events with >=5 landslides by footprint. f Odds ratio of an AR for an event of >=5 landslides, before and after adjusting for the
+e Share of events with >=5 landslides by footprint. f Relative probability of an event of >=5 landslides under an AR, before and after adjusting for the
 footprint and the peak rain (logistic regression with month fixed effects)."""
 import os as _os
 REPO = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
@@ -112,8 +112,8 @@ axe.set_xticks(range(6)); axe.set_xticklabels(labs, fontsize=6.5); axe.set_xlim(
 axe.set_xlabel('Extreme-precipitation area (10³ km²)'); axe.set_ylabel('Share of events (%)')
 axe.legend(loc='upper left', frameon=False, fontsize=5.6, handlelength=1.6, borderaxespad=0.2, labelspacing=0.25, ncol=1)
 axe.spines[['top', 'right']].set_visible(False)
-# i: odds ratios (v06 models: cluster-robust by inventory and year; area and duration as logarithms)
-R = pd.read_csv(f'{DATA}/derived/v6/logit_v6.csv')
+# i: relative probabilities (v06 models, all events as AR vs all as other: cluster-robust by inventory and year; area and duration as logarithms)
+R = pd.read_csv(f'{DATA}/proc/prob/ar_size_prob.csv')
 axf = ax_mm(147, rb, 34, rh)
 names = {'NVE': 'Norway', 'USGS': 'United States', 'ITALICA': 'Italy', 'GLC': 'Global (GLC)', 'GFLD': 'Global fatal', 'ALL': 'All events, ≥5', 'ALL20': 'All events, ≥20'}
 models = [('raw', 'Unadjusted', NAVY), ('+duration', '+ duration', '#6BAED6'), ('+simultaneous footprint+duration', '+ area, duration', '#E08214'),
@@ -123,13 +123,13 @@ for i, (key_, out_, src_) in enumerate(rows_):
     for j, (mk, ml, col) in enumerate(models):
         r = R[(R.src == src_) & (R.outcome == out_) & (R.model == mk)].iloc[0]; y = i + 0.27 - j * 0.18
         axf.plot([max(r.lo, 0.3), min(r.hi, 9.5)], [y, y], color=col, lw=0.8)
-        axf.plot(r.OR, y, 'o', color=col, ms=2.6 if not key_.startswith('ALL') else 3.2, zorder=3, label=ml if i == 0 else None)
+        axf.plot(r.RR, y, 'o', color=col, ms=2.6 if not key_.startswith('ALL') else 3.2, zorder=3, label=ml if i == 0 else None)
     axf.text(0.27, i, names[key_], ha='right', va='center', fontsize=6, fontweight='bold' if key_.startswith('ALL') else None)
 axf.axvline(1, color='#999999', lw=0.6, ls=(0, (2, 1.5)), zorder=0)
 axf.set_xscale('log'); axf.set_xlim(0.3, 10); axf.set_xticks([0.5, 1, 2, 4, 8]); axf.set_xticklabels(['0.5', '1', '2', '4', '8'])
 axf.xaxis.set_minor_locator(matplotlib.ticker.NullLocator())
 axf.set_ylim(-0.55, len(rows_) - 0.45); axf.set_yticks([]); axf.spines[['top', 'right', 'left']].set_visible(False)
-axf.set_xlabel('AR odds ratio')
+axf.set_xlabel('AR relative probability')
 axf.legend(loc='lower left', bbox_to_anchor=(-0.62, 0.99), ncol=2, frameon=False, fontsize=5.6, handlelength=0.8, columnspacing=0.6, borderaxespad=0.1, handletextpad=0.3)
 
 def L(s, x, y): fig.text(x / W, y / H, s, fontsize=9, fontweight='bold', va='top')
