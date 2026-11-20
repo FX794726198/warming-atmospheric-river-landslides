@@ -13,14 +13,13 @@ pip install -r requirements.txt
 ./make_figures.sh                 # writes fig/ (about 30 s); FIGOUT=/some/dir ./make_figures.sh writes elsewhere
 ```
 
-`make_figures.sh` runs every script in `fig_code/` in turn. Supplementary Figs. S2–S9 and S12 are assembled from panels that the scripts first write to `fig/parts/` (`compose_si.py`). The output matches the figures of the submitted manuscript.
+`make_figures.sh` runs every script in `fig_code/` in turn. Supplementary Figs. S2–S9 and S12 are assembled from panels that the scripts first write to `fig/parts/` (`compose_si.py`). The output matches the figures of the submitted manuscript. Rendered figures are not stored in the repository.
 
 ## Layout
 
 | Folder | Content |
 |---|---|
 | `fig_code/` | One script per figure (see the table below). `arcommon.py` and `figcommon.py` hold shared helpers, `nature.mplstyle` the plot style. |
-| `fig/` | The figures as PNG (and PDF for the main figures, Supplementary Figs. S1 and S11). |
 | `data/` | The minimal data behind the figures (102 MB; see below). |
 | `tables/` | Supplementary Tables S1–S14 as Markdown, with their captions. |
 | `supplementary_data/` | Supplementary Data 1: the 231 regional landslide events and the records removed as duplicates. |
@@ -99,7 +98,7 @@ Python 3.13 (cartopy downloads Natural Earth coastlines on first use) with numpy
 
 ## Licence and citation
 
-Code: MIT licence (`LICENSE`). Data and figures: CC BY 4.0 (`LICENSE-DATA`); third-party data keep their original licences. A versioned copy will be archived on Zenodo with a DOI on acceptance. Please cite the paper when using this material.
+Code: MIT licence (`LICENSE`). Data and tables: CC BY 4.0 (`LICENSE-DATA`); third-party data keep their original licences. A versioned copy will be archived on Zenodo with a DOI on acceptance. Please cite the paper when using this material.
 
 ## Contact
 
